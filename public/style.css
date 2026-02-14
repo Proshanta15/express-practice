@@ -1,3 +1,56 @@
-h1 {
-  color: green;
+ul {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+.navbar {
+  background: #000;
+  color: #fff;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.navbar ul li a {
+  color: #fff;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.report_section {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 70px);
+}
+.report_section ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.report_section ul li {
+  background: #ccc;
+  padding: 20px;
+  border-radius: 10px;
 }

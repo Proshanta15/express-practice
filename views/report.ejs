@@ -1,17 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    <h1>Student Report File</h1>
 
-    <div>
-      <p>Name: <%= student.name %></p>
-      <p>Grade: <%= student.grade %></p>
-      <p>Sub: <%= student.sub %></p>
-    </div>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <%- include('header')  %>
+  <section class="report_section">
+    <h1>Student Report File</h1>
+    <ul>
+      <% student.forEach((stud)=> { %>
+        <li>
+          <p>Name: <%= stud.name %>
+          </p>
+          <p>Grade: <%= stud.grade %>
+          </p>
+          <p>Sub: <%= stud.sub %>
+          </p>
+        </li>
+        <% }) %>
+    </ul>
+  </section>
+
+</body>
+
 </html>
